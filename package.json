@@ -17,7 +17,8 @@
     "test": "NODE_ENV=test ./node_modules/.bin/karma start",
     "changelog": "./node_modules/.bin/conventional-changelog -i CHANGELOG.md -s -p angular",
     "postversion": "git push origin master&& git push --tags && npm run postpublish",
-    "github-release": "conventional-github-releaser -p angular -r 0"
+    "github-release": "conventional-github-releaser -p angular -r 0",
+    "lint": "./node_modules/.bin/eslint --ignore-path .gitignore  --ext js --fix . .config"
   },
   "main": "ng2-bootstrap.js",
   "typings": "ng2-bootstrap.d.ts",
@@ -57,12 +58,11 @@
     "es6-promise": "3.1.2",
     "es6-shim": "0.33.3",
     "es7-reflect-metadata": "1.5.5",
-    "eslint": "1.10.3",
+    "eslint-config-valorsoft": "0.0.4",
     "exports-loader": "0.6.3",
     "file-loader": "0.8.5",
     "gh-pages": "0.10.0",
     "gulp": "3.9.1",
-    "gulp-eslint": "1.1.1",
     "gulp-size": "2.0.0",
     "gulp-tslint": "4.3.2",
     "html-loader": "0.4.3",
